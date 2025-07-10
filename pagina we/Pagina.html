@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games Universe - Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-img">🎮</div>
+                <span>Games Universe</span>
+            </div>
+            <button class="nav-toggle" aria-label="Alternar menú de navegación">☰</button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active" aria-label="Ir a la página de inicio">Inicio</a></li>
+                    <li><a href="QuienesSomos.html" aria-label="Ir a la página Quiénes Somos">Quiénes Somos</a></li>
+                    <li><a href="servicios.html" aria-label="Ir a la página de Servicios">Servicios</a></li>
+                    <li><a href="Galeria.html" aria-label="Ir a la página de Juegos">Juegos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-header fade-in">
+            <h1 class="hero-title">CREA TU UNIVERSO</h1>
+            <p class="hero-subtitle">Sumérgete en mundos extraordinarios con las experiencias de juego más innovadoras y emocionantes del mercado.</p>
+        </div>
+        <div class="hero-grid">
+            <div class="form-container fade-in">
+                <h3 class="form-title">Únete a nuestra comunidad</h3>
+                <form class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Tu nombre" required aria-label="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Correo electrónico" required aria-label="Correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select" required aria-label="Género">
+                                <option value="" disabled selected>Selecciona tu género</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                                <option value="prefiero_no_decir">Prefiero no decir</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-grid">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="genres" value="accion">
+                            <span>🎯 Acción</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="genres" value="aventura">
+                            <span>🗺️ Aventura</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="genres" value="rpg">
+                            <span>⚔️ RPG</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="genres" value="simulacion">
+                            <span>🏗️ Simulación</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" aria-label="Enviar formulario">Comenzar Aventura</button>
+                    <p class="form-error" style="display: none;" aria-live="polite">Por favor, selecciona al menos un género o verifica tu correo.</p>
+                    <p class="form-success" style="display: none;" aria-live="polite">¡Gracias por unirte! Pronto recibirás noticias nuestras.</p>
+                </form>
+            </div>
+
+            <div class="carousel-container fade-in">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=500&fit=crop&q=80" alt="Videojuego de acción" loading="lazy">
+                            <div class="carousel-caption">Aventura Épica de Acción</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1556438064-2d7646166914?w=800&h=500&fit=crop&q=80" alt="Videojuego de aventura" loading="lazy">
+                            <div class="carousel-caption">Explora Mundos Desconocidos</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=500&fit=crop&q=80" alt="Videojuego de rol" loading="lazy">
+                            <div class="carousel-caption">Crea tu Propia Leyenda</div>
+                        </div>
+                    </div>
+                    <button class="carousel-nav carousel-prev" aria-label="Imagen anterior">❮</button>
+                    <button class="carousel-nav carousel-next" aria-label="Imagen siguiente">❯</button>
+                    <div class="carousel-indicators">
+                        <div class="indicator active" tabindex="0" aria-label="Ir a la imagen 1"></div>
+                        <div class="indicator" tabindex="0" aria-label="Ir a la imagen 2"></div>
+                        <div class="indicator" tabindex="0" aria-label="Ir a la imagen 3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores Section -->
+    <section class="info-section fade-in" id="mission-vision-values">
+        <div class="info-header">
+            <h2>Nuestra Esencia</h2>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">Descubre lo que nos impulsa a crear experiencias únicas.</p>
+        </div>
+        <div class="info-cards">
+            <div class="info-card fade-in" style="animation-delay: 0.1s;">
+                <div class="card-icon">🎯</div>
+                <h3 class="card-title">Misión</h3>
+                <p class="card-description">Ofrecer experiencias innovadoras, emocionantes y accesibles a través de videojuegos de alta calidad, fomentando la creatividad y el entretenimiento en todas las edades.</p>
+            </div>
+            <div class="info-card fade-in" style="animation-delay: 0.2s;">
+                <div class="card-icon">👁️</div>
+                <h3 class="card-title">Visión</h3>
+                <p class="card-description">Ser una de las empresas líderes en la industria global de videojuegos, reconocida por su creatividad, tecnología avanzada y compromiso con la comunidad gamer.</p>
+            </div>
+            <div class="info-card fade-in" style="animation-delay: 0.3s;">
+                <div class="card-icon">💡</div>
+                <h3 class="card-title">Valores</h3>
+                <p class="card-description">
+                    • Innovación<br>
+                    • Inclusión<br>
+                    • Calidad<br>
+                    • Responsabilidad social<br>
+                    • Diversión<br>
+                    • Trabajo en equipo
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📞 +503 2222-3333</p>
+                <p>📧 contacto@universalgames.com</p>
+                <p>📍 San Salvador, El Salvador</p>
+                <p>🕘 Lunes a Viernes: 9:00 a.m. – 6:00 p.m.</p>
+                
+                <div class="social-links">
+                    <a href="https://facebook.com/gamesuniverse" class="social-link" aria-label="Visita nuestra página de Facebook">Facebook</a>
+                    <a href="https://instagram.com/gamesuniverse" class="social-link" aria-label="Visita nuestra página de Instagram">Instagram</a>
+                    <a href="https://youtube.com/gamesuniverse" class="social-link" aria-label="Visita nuestro canal de YouTube">YouTube</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31510.75771472699!2d-89.2183089!3d13.6929403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633e2dc0e0d7e3%3A0x8e1f8f7b8f1e8f7b!2sSan+Salvador%2C+El+Salvador!5e0!3m2!1sen!2sus"
+                        width="100%" height="200"
+                        style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Games Universe | Desarrollado por Josué Gabriel Jiménez Almendáriz - 2° Año de Bachillerato - Sección A</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Carrusel
+            const track = document.querySelector('.carousel-track');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const prevBtn = document.querySelector('.carousel-prev');
+            const nextBtn = document.querySelector('.carousel-next');
+            const indicators = document.querySelectorAll('.indicator');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            let autoPlayInterval = null;
+
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentSlide * 100}%)`;
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            }
+
+            nextBtn.addEventListener('click', () => {
+                stopAutoPlay();
+                nextSlide();
+                startAutoPlay();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                stopAutoPlay();
+                prevSlide();
+                startAutoPlay();
+            });
+
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    stopAutoPlay();
+                    currentSlide = index;
+                    updateCarousel();
+                    startAutoPlay();
+                });
+                indicator.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        stopAutoPlay();
+                        currentSlide = index;
+                        updateCarousel();
+                        startAutoPlay();
+                    }
+                });
+            });
+
+            let touchStartX = 0;
+            let touchEndX = 0;
+            track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+            track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                if (touchStartX - touchEndX > 50) {
+                    stopAutoPlay();
+                    nextSlide();
+                    startAutoPlay();
+                } else if (touchEndX - touchStartX > 50) {
+                    stopAutoPlay();
+                    prevSlide();
+                    startAutoPlay();
+                }
+            });
+
+            startAutoPlay();
+
+            // Menú hamburguesa
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav');
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            // Formulario
+            document.querySelector('.contact-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const checkboxes = document.querySelectorAll('input[name="genres"]:checked');
+                const emailInput = document.querySelector('input[type="email"]');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const errorMessage = document.querySelector('.form-error');
+                const successMessage = document.querySelector('.form-success');
+                const btn = document.querySelector('.submit-btn');
+                const originalText = btn.textContent;
+
+                errorMessage.style.display = 'none';
+                successMessage.style.display = 'none';
+
+                if (checkboxes.length === 0 || !emailRegex.test(emailInput.value)) {
+                    errorMessage.style.display = 'block';
+                    return;
+                }
+
+                btn.textContent = '✓ ¡Enviado!';
+                btn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
+                successMessage.style.display = 'block';
+
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = 'var(--accent-gradient)';
+                    document.querySelector('.contact-form').reset();
+                    successMessage.style.display = 'none';
+                }, 2000);
+            });
+
+            // Animaciones on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'all 0.6s ease';
+                observer.observe(element);
+            });
+
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(26, 26, 46, 0.98)';
+                    header.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+                } else {
+                    header.style.background = 'rgba(26, 26, 46, 0.95)';
+                    header.style.boxShadow = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

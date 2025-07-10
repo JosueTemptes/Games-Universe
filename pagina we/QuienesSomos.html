@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games Universe - Quiénes Somos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-img">🎮</div>
+                <span>Games Universe</span>
+            </div>
+            <button class="nav-toggle" aria-label="Alternar menú de navegación">☰</button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="Pagina.html" aria-label="Ir a la página de inicio">Inicio</a></li>
+                    <li><a href="QuienesSomos.html" class="active" aria-label="Ir a la página Quiénes Somos">Quiénes Somos</a></li>
+                    <li><a href="servicios.html" aria-label="Ir a la página de Servicios">Servicios</a></li>
+                    <li><a href="Juegos.html" aria-label="Ir a la página de Juegos">Juegos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Quiénes Somos Section -->
+    <section class="info-section" id="about">
+        <div class="info-header">
+            <h2>Quiénes Somos</h2>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">Conoce la pasión y el talento detrás de Games Universe</p>
+        </div>
+        <div class="info-description">
+            <p>En Games Universe, somos un equipo de innovadores apasionados por crear experiencias de juego únicas que transportan a los jugadores a mundos extraordinarios. Desde nuestra fundación en San Salvador, hemos trabajado incansablemente para liderar la industria del gaming con creatividad, calidad y comunidad.</p>
+        </div>
+        <div class="info-cards">
+            <div class="info-card fade-in" style="animation-delay: 0.1s;">
+                <img src="c:\Users\MINEDUCYT\Desktop\yo2.jpg" alt="Miembro del equipo 1" class="team-img" loading="lazy">
+                <h3 class="card-title">Josué Jiménez</h3>
+                <p class="card-description">Director Creativo<br>Encargado de dar vida a las visiones artísticas de nuestros juegos.</p>
+            </div>
+            <div class="info-card fade-in" style="animation-delay: 0.2s;">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&q=80" alt="Miembro del equipo 2" class="team-img" loading="lazy">
+                <h3 class="card-title">Carlos Ramírez</h3>
+                <p class="card-description">Líder Técnico<br>Experto en desarrollo de motores gráficos y jugabilidad fluida.</p>
+            </div>
+            <div class="info-card fade-in" style="animation-delay: 0.3s;">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&q=80" alt="Miembro del equipo 3" class="team-img" loading="lazy">
+                <h3 class="card-title">María Gómez</h3>
+                <p class="card-description">Gerente de Comunidad<br>Conecta a los jugadores con eventos y actualizaciones emocionantes.</p>
+            </div>
+            <div class="info-card fade-in" style="animation-delay: 0.4s;">
+                <div class="card-icon">🚀</div>
+                <h3 class="card-title">Únete al Equipo</h3>
+                <p class="card-description">¿Tienes pasión por los videojuegos? ¡Únete a nuestra misión y crea el futuro del gaming!</p>
+                <a href="#contact" class="cta-btn">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📞 +503 2222-3333</p>
+                <p>📧 contacto@universalgames.com</p>
+                <p>📍 San Salvador, El Salvador</p>
+                <p>🕘 Lunes a Viernes: 9:00 a.m. – 6:00 p.m.</p>
+                
+                <div class="social-links">
+                    <a href="https://facebook.com/gamesuniverse" class="social-link" aria-label="Visita nuestra página de Facebook">Facebook</a>
+                    <a href="https://instagram.com/gamesuniverse" class="social-link" aria-label="Visita nuestra página de Instagram">Instagram</a>
+                    <a href="https://youtube.com/gamesuniverse" class="social-link" aria-label="Visita nuestro canal de YouTube">YouTube</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31510.75771472699!2d-89.2183089!3d13.6929403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633e2dc0e0d7e3%3A0x8e1f8f7b8f1e8f7b!2sSan+Salvador%2C+El+Salvador!5e0!3m2!1sen!2sus"
+                        width="100%" height="200"
+                        style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Games Universe | Desarrollado por Josué Gabriel Jiménez Almendáriz - 2° Año de Bachillerato - Sección A</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Menú hamburguesa
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav');
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            // Animaciones on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'all 0.6s ease';
+                observer.observe(element);
+            });
+
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(26, 26, 46, 0.98)';
+                    header.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+                } else {
+                    header.style.background = 'rgba(26, 26, 46, 0.95)';
+                    header.style.boxShadow = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
